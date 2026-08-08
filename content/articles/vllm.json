@@ -1,0 +1,233 @@
+{
+  "type": "remote",
+  "slug": "vllm",
+  "owner": "sunilkunchoor",
+  "repo": "vLLM",
+  "branch": "main",
+  "title": "vLLM & LLM Inference Serving",
+  "date": "2026-08-08",
+  "summary": "A comprehensive guide to vLLM, PagedAttention, continuous batching, request scheduling, and operating LLM inference servers.",
+  "tags": [
+    "vLLM",
+    "LLM",
+    "Inference",
+    "PagedAttention",
+    "GPU",
+    "Deep Learning"
+  ],
+  "author": "Sunil Kunchoor Basavaraju",
+  "mainPath": "docs/README.md",
+  "subPages": [
+    {
+      "title": "Orientation",
+      "path": "docs/00-orientation/README.md",
+      "slug": [
+        "00-orientation"
+      ]
+    },
+    {
+      "title": "01 · Why Inference Servers Exist",
+      "path": "docs/00-orientation/01-why-inference-servers-exist.md",
+      "slug": [
+        "00-orientation",
+        "01-why-inference-servers-exist"
+      ]
+    },
+    {
+      "title": "02 · Where vLLM Sits",
+      "path": "docs/00-orientation/02-where-vllm-sits.md",
+      "slug": [
+        "00-orientation",
+        "02-where-vllm-sits"
+      ]
+    },
+    {
+      "title": "03 · Anatomy of a vLLM Setup",
+      "path": "docs/00-orientation/03-anatomy-of-a-vllm-setup.md",
+      "slug": [
+        "00-orientation",
+        "03-anatomy-of-a-vllm-setup"
+      ]
+    },
+    {
+      "title": "Stage 1 — Core Concepts",
+      "path": "docs/01-concepts/README.md",
+      "slug": [
+        "01-concepts"
+      ]
+    },
+    {
+      "title": "01 · The KV Cache",
+      "path": "docs/01-concepts/01-the-kv-cache.md",
+      "slug": [
+        "01-concepts",
+        "01-the-kv-cache"
+      ]
+    },
+    {
+      "title": "02 · Prefill vs Decode",
+      "path": "docs/01-concepts/02-prefill-and-decode.md",
+      "slug": [
+        "01-concepts",
+        "02-prefill-and-decode"
+      ]
+    },
+    {
+      "title": "03 · PagedAttention",
+      "path": "docs/01-concepts/03-pagedattention.md",
+      "slug": [
+        "01-concepts",
+        "03-pagedattention"
+      ]
+    },
+    {
+      "title": "04 · Continuous Batching",
+      "path": "docs/01-concepts/04-continuous-batching.md",
+      "slug": [
+        "01-concepts",
+        "04-continuous-batching"
+      ]
+    },
+    {
+      "title": "05 · Sampling Parameters",
+      "path": "docs/01-concepts/05-sampling-parameters.md",
+      "slug": [
+        "01-concepts",
+        "05-sampling-parameters"
+      ]
+    },
+    {
+      "title": "Stage 2 — The Engine",
+      "path": "docs/02-engine/README.md",
+      "slug": [
+        "02-engine"
+      ]
+    },
+    {
+      "title": "01 · The Scheduler & Block Manager",
+      "path": "docs/02-engine/01-scheduler-and-block-manager.md",
+      "slug": [
+        "02-engine",
+        "01-scheduler-and-block-manager"
+      ]
+    },
+    {
+      "title": "02 · Lifecycle of a Request",
+      "path": "docs/02-engine/02-lifecycle-of-a-request.md",
+      "slug": [
+        "02-engine",
+        "02-lifecycle-of-a-request"
+      ]
+    },
+    {
+      "title": "03 · Prefix Caching",
+      "path": "docs/02-engine/03-prefix-caching.md",
+      "slug": [
+        "02-engine",
+        "03-prefix-caching"
+      ]
+    },
+    {
+      "title": "04 · Quantisation",
+      "path": "docs/02-engine/04-quantisation.md",
+      "slug": [
+        "02-engine",
+        "04-quantisation"
+      ]
+    },
+    {
+      "title": "05 · Speculative Decoding",
+      "path": "docs/02-engine/05-speculative-decoding.md",
+      "slug": [
+        "02-engine",
+        "05-speculative-decoding"
+      ]
+    },
+    {
+      "title": "Stage 3 — Running It Locally",
+      "path": "docs/03-running-locally/README.md",
+      "slug": [
+        "03-running-locally"
+      ]
+    },
+    {
+      "title": "01 · Installing vLLM",
+      "path": "docs/03-running-locally/01-installing-vllm.md",
+      "slug": [
+        "03-running-locally",
+        "01-installing-vllm"
+      ]
+    },
+    {
+      "title": "02 · Offline Batch Inference",
+      "path": "docs/03-running-locally/02-offline-batch-inference.md",
+      "slug": [
+        "03-running-locally",
+        "02-offline-batch-inference"
+      ]
+    },
+    {
+      "title": "03 · The OpenAI-Compatible Server",
+      "path": "docs/03-running-locally/03-the-openai-compatible-server.md",
+      "slug": [
+        "03-running-locally",
+        "03-the-openai-compatible-server"
+      ]
+    },
+    {
+      "title": "04 · Streaming & Client Patterns",
+      "path": "docs/03-running-locally/04-streaming-and-client-patterns.md",
+      "slug": [
+        "03-running-locally",
+        "04-streaming-and-client-patterns"
+      ]
+    },
+    {
+      "title": "05 · The Getting-Started Notebook",
+      "path": "docs/03-running-locally/05-getting-started-notebook.md",
+      "slug": [
+        "03-running-locally",
+        "05-getting-started-notebook"
+      ]
+    },
+    {
+      "title": "Stage 7 — Case Studies",
+      "path": "docs/07-case-studies/README.md",
+      "slug": [
+        "07-case-studies"
+      ]
+    },
+    {
+      "title": "01 · RAG Chatbot at Scale",
+      "path": "docs/07-case-studies/01-rag-chatbot-at-scale.md",
+      "slug": [
+        "07-case-studies",
+        "01-rag-chatbot-at-scale"
+      ]
+    },
+    {
+      "title": "02 · Offline Batch Summarisation",
+      "path": "docs/07-case-studies/02-offline-batch-summarisation.md",
+      "slug": [
+        "07-case-studies",
+        "02-offline-batch-summarisation"
+      ]
+    },
+    {
+      "title": "03 · Coding Agent on Long Context",
+      "path": "docs/07-case-studies/03-coding-agent-long-context.md",
+      "slug": [
+        "07-case-studies",
+        "03-coding-agent-long-context"
+      ]
+    },
+    {
+      "title": "04 · Multi-Tenant LoRA on One GPU",
+      "path": "docs/07-case-studies/04-multi-tenant-lora-on-one-gpu.md",
+      "slug": [
+        "07-case-studies",
+        "04-multi-tenant-lora-on-one-gpu"
+      ]
+    }
+  ]
+}
