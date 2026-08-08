@@ -26,7 +26,7 @@ function resolveRepoPath(markdownRepoPath, relativeImageHref) {
 
 // Download image, convert non-SVGs to lossy WebP (85% quality), and rewrite markdown tags
 async function processMarkdownImages(rawContent, markdownRepoPath, owner, repo, branch, slug) {
-  const imageRegex = /!\[(.*?)\]\((.*?)\)/g;
+  const imageRegex = /!\[([\s\S]*?)\]\((.*?)\)/g;
   let match;
   let updatedContent = rawContent;
   const matches = [];
@@ -127,10 +127,16 @@ async function syncArticles() {
 
     // Read all JSON configuration files in the articles folder
     const files = fs.readdirSync(articlesDir);
-    const jsonFiles = files.filter(file => file.endsWith('.json'));
+    let jsonFiles = files.filter(file => file.endsWith('.json'));
+
+    const targetSlug = process.argv[2];
+    if (targetSlug) {
+      jsonFiles = jsonFiles.filter(file => file === `${targetSlug}.json` || file === targetSlug);
+      console.log(`Filtering sync to target article: ${targetSlug}`);
+    }
 
     if (jsonFiles.length === 0) {
-      console.log("No article JSON configurations found in content/articles.");
+      console.log("No matching article JSON configurations found in content/articles.");
       console.log("Sync pipeline completed successfully!");
       return;
     }

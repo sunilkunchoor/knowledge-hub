@@ -66,6 +66,8 @@ content/articles/azure/
 content/articles/azure.md
 content/articles/terraform/
 content/articles/terraform.md
+content/articles/vllm/
+content/articles/vllm.md
 
 
 # Dynamically downloaded article images
@@ -76,3 +78,4 @@ public/assets/c4-model/
 public/assets/aws/
 public/assets/azure/
 public/assets/terraform/
+public/assets/vllm/
